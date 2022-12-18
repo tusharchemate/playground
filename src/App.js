@@ -3,6 +3,7 @@ import Todo from "./components/Todo/index";
 import TodoList from './components/TodoList/index';
 import { useState } from "react";
 import ProgessBar from "./components/progessBar";
+import Parent from "./components/ChildToParent/parent";
 function App() {
 
 const [input, setInput] = useState("");
@@ -13,11 +14,11 @@ console.log(editTodo);
   return (
     <div className="App">
       <>
-      <ProgessBar />
+      {/* <ProgessBar /> */}
         {/* <Todo input={input} setInput={setInput} todos={todos} setTodos={setTodos} editTodo={editTodo} setEditTodo={setEditTodo} />
 
         <TodoList todos={todos} setTodos={setTodos} editTodo={editTodo} setEditTodo={setEditTodo} /> */}
-
+      <Parent />
       </>
     </div>
   );
